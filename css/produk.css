@@ -196,12 +196,15 @@ nav .fa {
   width: 400px;
 }
 
+.produk-col .img-1 {
+  width: 470px;
+}
+
 .produk-col {
   text-align: center;
 }
 
 /*---Footer----*/
-
 .footer {
   width: 100%;
   text-align: center;
