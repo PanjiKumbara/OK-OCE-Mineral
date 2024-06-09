@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #007899;
+  background: #0f599a;
   border-radius: 10px;
 }
 
@@ -25,7 +25,7 @@ html {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: url(../asset/img/bg-water.jpg);
+  background-image: url(../asset/img/bg-madinah.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -38,12 +38,11 @@ nav {
   align-items: center;
 }
 
-nav img {
-  width: 120px;
-  margin: 25px 20px;
-  background: white;
-  border-radius: 100%;
-  box-shadow: -1px 1px 16px 15px white;
+nav .img-madinah {
+  width: 150px;
+}
+nav .img-okoce {
+  width: 175px;
 }
 
 .nav-links {
@@ -59,7 +58,7 @@ nav img {
 }
 
 .nav-links ul li a {
-  color: #fff;
+  color: #0f599a;
   text-decoration: none;
   font-size: 25px;
 }
@@ -68,7 +67,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background: white;
+  background: #007899;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -90,19 +89,24 @@ nav img {
 
 .text-box h1 {
   font-size: 62px;
+  color: #0f599a;
 }
 
 .text-box p {
   margin: 10px 0 40px;
   font-size: 30px;
-  color: #fff;
+  color: #0f599a;
+}
+
+.text-box span {
+  color: #ed2028;
 }
 
 .hero-btn {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #0f599a;
+  border: 1px solid #0f599a;
   padding: 12px 34px;
   font-size: 13px;
   background: transparant;
@@ -113,7 +117,7 @@ nav img {
 .hero-btn:hover {
   border: 1px solid white;
   background: white;
-  color: black;
+  color: #007899;
   transition: 1s;
 }
 
@@ -128,15 +132,30 @@ nav .fa {
     scroll-behavior: smooth;
   }
 
+  /*--Header--*/
+
+  .text-box {
+    margin-top: 0px;
+  }
+  .text-box p {
+    font-size: 5px;
+    color: #007899;
+  }
   .text-box h1 {
     font-size: 20px;
+    margin-top: -100px;
+  }
+  .hero-btn {
+    color: #007899;
+    border: 1px solid #007899;
+    background: white;
   }
   .nav-links ul li {
     display: block;
   }
   .nav-links {
     position: absolute;
-    background: linear-gradient(#005f82, white);
+    background: white;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -148,8 +167,9 @@ nav .fa {
 
   nav .fa {
     display: block;
-    color: white;
-    margin: 10px;
+    color: #0f599a;
+    margin-top: 30px;
+    margin-right: 10px;
     font-size: 22px;
     cursor: pointer;
   }
@@ -158,13 +178,206 @@ nav .fa {
     padding: 30px;
   }
 
-  nav img {
-    width: 70px;
-    margin: 25px 20px;
-    background: white;
-    border-radius: 100%;
-    box-shadow: -1px 1px 16px 15px white;
+  nav .img-madinah {
+    width: 100px;
+    margin-top: 40px;
   }
+  nav .img-okoce {
+    width: 130px;
+    margin-top: 40px;
+  }
+
+  /*---Section---*/
+  @keyframes scroll {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .isi-konten {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .teks-konten {
+    animation: 15s scroll infinite linear;
+  }
+
+  .isi-konten:hover .teks-konten {
+    animation-play-state: paused;
+  }
+
+  .kelebihan-col p {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-3 {
+    margin-bottom: 5px;
+  }
+
+  .produksi h1 {
+    font-size: 20px;
+  }
+  .produksi p {
+    font-size: 20px;
+    color: #007899;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+  }
+
+  .produksi .img-produksi img {
+    width: 300px;
+  }
+
+  .img-thanks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .text-box {
+    margin-top: 100px;
+  }
+
+  .text-box p {
+    font-size: 20px;
+  }
+  .text-box h1 {
+    font-size: 40px;
+  }
+}
+
+/*---Section---*/
+.konten {
+  display: flex;
+  flex-direction: column;
+}
+
+.konten .judul-konten {
+  margin-bottom: 30px;
+}
+
+.konten .teks-konten {
+  gap: 50px;
+}
+
+.judul-konten h1 {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  color: #0f599a;
+}
+
+.judul-konten span {
+  color: #ed2028;
+}
+
+.teks-konten {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.kelebihan-col p {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #007899;
+}
+.img-3 {
+  margin-bottom: 5px;
+}
+
+.produksi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  color: #007899;
+}
+
+.produksi h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #0f599a;
+}
+
+.produksi p {
+  font-size: 15px;
+}
+
+.produksi .row {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.row .img-produksi {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.img-produksi img {
+  width: 500px;
+}
+
+.testimoni {
+  margin-bottom: 100px;
+}
+
+.testimoni h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #0f599a;
+}
+
+.thanks {
+  width: 100%;
+  background-size: cover;
+  padding-top: 50px;
+  background-image: linear-gradient(to bottom, #8fca61, #0f599a);
+}
+
+.thanks-row .img-thanks {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks h3 {
+  margin-bottom: 2px;
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.img-thanks img {
+  width: 150px;
+}
+
+.thanks-row .img2-thanks {
+  width: 200px;
+}
+
+.thanks-row .img3-thanks {
+  width: 300px;
 }
 
 /*---Footer----*/
@@ -173,13 +386,12 @@ nav .fa {
   width: 100%;
   text-align: center;
   padding: 30px 0;
-  background: #005f82;
+  background: #0f599a;
   color: white;
 }
 
-.footer h4 {
+.footer h3 {
   margin-bottom: 25px;
-  margin-top: 20px;
   font-weight: 600;
 }
 
