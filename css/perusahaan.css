@@ -187,55 +187,18 @@ nav .fa {
   }
 
   /*---Section---*/
-  @keyframes scroll {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
-  }
-
-  .isi-konten {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .teks-konten {
-    animation: 15s scroll infinite linear;
-  }
-
-  .kelebihan-col p {
-    margin-top: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-  .img-3 {
-    margin-bottom: 5px;
-  }
-
-  .produksi h1 {
-    font-size: 20px;
-  }
-  .produksi p {
-    font-size: 20px;
-    color: #007899;
-  }
-
-  .row {
+  .mitra .teks-konten {
     display: flex;
     flex-direction: column;
-    margin: 2px;
-  }
-
-  .produksi .img-produksi img {
-    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 1440px) {
   .text-box {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .text-box p {
@@ -277,16 +240,52 @@ nav .fa {
   color: #007899;
 }
 
+.core-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.core-value h1 {
+  color: #0f599a;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.core-value p {
+  color: #007899;
+  text-align: justify;
+}
+
 .misi p {
   text-align: left;
 }
 
 .mitra {
   margin-top: 100px;
+
   color: #0f599a;
 }
 .mitra h3 {
   margin-top: 20px;
+}
+
+.teks-konten {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.img-3 {
+  margin-top: -1px;
+}
+
+.kelebihan-col img {
+  width: 150px;
 }
 
 /*---Footer----*/

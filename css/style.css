@@ -248,11 +248,48 @@ nav .fa {
   .swiper-navBtn {
     display: none;
   }
+
+  .kemitraan .kemitraan-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kemitraan .kemitraan-2 img {
+    margin-bottom: 30px;
+  }
+
+  .kemitraan .whatsapp img {
+    margin-bottom: 100px;
+  }
+
+  .card-content .name {
+    font-size: 13px;
+  }
+
+  .card-content .description {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .popup-screen .popup-box img {
+    width: 30px;
+    margin-left: 30px;
+  }
+
+  .popup-screen .popup-box .btn-img {
+    width: 200px;
+  }
+
+  .popup-box .popup-dismiss {
+    margin-bottom: 300px;
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1440px) {
   .text-box {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .text-box p {
@@ -264,6 +301,54 @@ nav .fa {
 }
 
 /*---Section---*/
+.popup-screen {
+  z-index: 99999;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.5s ease;
+  transition-property: visibility;
+}
+
+.popup-screen.active {
+  visibility: visible;
+}
+
+.popup-box {
+  position: relative;
+  backdrop-filter: blur(10px);
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s ease;
+  transition-property: transform;
+}
+
+.popup-screen.active .popup-box {
+  transform: scale(1);
+}
+
+.popup-box img {
+  width: 50px;
+}
+
+.popup-box .btn-img {
+  width: 350px;
+}
+
+.popup-dismiss {
+  margin-bottom: 500px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 .konten {
   display: flex;
   flex-direction: column;
@@ -440,10 +525,6 @@ nav .fa {
   margin-bottom: 10px;
 }
 
-.name span {
-  font-size: 14px;
-}
-
 .description {
   font-size: 14px;
   color: #007899;
@@ -515,6 +596,42 @@ nav .fa {
 
 .thanks-row .img3-thanks {
   width: 300px;
+}
+
+.kemitraan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kemitraan h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #0f599a;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.kemitraan-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.kemitraan-2 img {
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+.kemitraan-2 h3 {
+  margin-top: 30px;
+  color: #0f599a;
+  margin-bottom: 20px;
+}
+
+.whatsapp img {
+  width: 80px;
+  margin-bottom: 100px;
 }
 
 /*---Footer----*/
