@@ -317,8 +317,10 @@ nav .fa {
   }
 
   .masuru .masuru-content p {
-    font-size: 14px;
+    font-size: 10px;
     text-align: justify;
+    padding: 0;
+    margin: 20px;
   }
 }
 
