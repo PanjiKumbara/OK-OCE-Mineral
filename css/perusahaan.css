@@ -124,7 +124,22 @@ nav .fa {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
+  .perusahaan .visi-misi {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+  }
+
+  .visi-misi h1 {
+    font-size: 20px;
+  }
+  .visi-misi p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 820px) {
   html,
   body {
     overflow-x: hidden;
@@ -193,6 +208,35 @@ nav .fa {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+  }
+
+  .tentang h1 {
+    display: flex;
+    align-item: center;
+    justify-content: center;
+  }
+
+  .tentang p {
+    color: #007899;
+    margin: -10px;
+    text-align: justify;
+  }
+  .visi-misi {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .core-value {
+    text-align: justify;
+  }
+
+  .white-label p {
+    text-align: justify;
+  }
+
+  .white-label h3 {
+    margin: 10px;
   }
 }
 
@@ -286,6 +330,41 @@ nav .fa {
 
 .kelebihan-col img {
   width: 150px;
+}
+
+.white-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.white-label h1 {
+  color: #0f599a;
+}
+
+.white-label h3 {
+  margin-top: 50px;
+  color: #0f599a;
+}
+.white-label p {
+  margin-top: 20px;
+  color: #007899;
+}
+
+.white-label p span {
+  text-align: center;
+}
+
+.h1-whiteLabel {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.whatsapp a img {
+  width: 100px;
 }
 
 /*---Footer----*/

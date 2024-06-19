@@ -125,7 +125,7 @@ nav .fa {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   html,
   body {
     overflow-x: hidden;
@@ -225,6 +225,7 @@ nav .fa {
   .produksi p {
     font-size: 20px;
     color: #007899;
+    margin: 20px;
   }
 
   .row {
@@ -235,6 +236,10 @@ nav .fa {
 
   .produksi .img-produksi img {
     width: 300px;
+  }
+
+  .thanks .img2-thanks {
+    margin-left: 50px;
   }
 
   .img-thanks {
@@ -284,6 +289,36 @@ nav .fa {
   .popup-box .popup-dismiss {
     margin-bottom: 300px;
     margin-left: 20px;
+  }
+
+  .kenapa-harus .isi-kenapa-harus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .isi-kenapa-harus .h1-judul h1 {
+    margin-bottom: 50px;
+  }
+
+  .h1-judul h1 {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .h1-isi p {
+    color: #007899;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .h1-isi p b {
+    font-size: 30px;
+  }
+
+  .masuru .masuru-content p {
+    font-size: 14px;
+    text-align: justify;
   }
 }
 
@@ -424,6 +459,49 @@ nav .fa {
 
 .img-produksi img {
   width: 500px;
+}
+
+.isi-kenapa-harus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 100px;
+}
+
+.h1-judul h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #0f599a;
+  text-align: justify;
+}
+
+.h1-isi p {
+  color: #007899;
+}
+
+.h1-isi p b {
+  font-size: 30px;
+}
+
+.masuru-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.masuru h3,
+.masuru h5 {
+  color: #0f599a;
+}
+
+.masuru p {
+  text-align: center;
+  padding: 0px 300px 20px 300px;
+  color: #007899;
 }
 
 .testimoni {
@@ -592,6 +670,7 @@ nav .fa {
 
 .thanks-row .img2-thanks {
   width: 200px;
+  margin-left: 40px;
 }
 
 .thanks-row .img3-thanks {
